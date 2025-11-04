@@ -17,6 +17,8 @@ import org.godotengine.godot.plugin.GodotPlugin;
 import org.godotengine.godot.plugin.UsedByGodot;
 import java.util.Collections;
 import java.util.List;
+import java.util.Arrays;
+
 
 public class GodotAndroidPlugin extends GodotPlugin {
     private static final String CHANNEL_ID = "my_channel_id";
