@@ -34,9 +34,13 @@ class AndroidExportPlugin extends EditorExportPlugin:
 	func _get_android_dependencies(platform, debug):
 		# TODO: Add remote dependices here.
 		if debug:
-			return PackedStringArray([])
+			return PackedStringArray(["org.godotengine:godot:4.3.0.stable",
+        "androidx.appcompat:appcompat:1.6.1",
+        "androidx.core:core-ktx:1.12.0"])
 		else:
-			return PackedStringArray([])
+			return PackedStringArray(["org.godotengine:godot:4.3.0.stable",
+        "androidx.appcompat:appcompat:1.6.1",
+        "androidx.core:core-ktx:1.12.0"])
 
 	func _get_name():
 		return _plugin_name
